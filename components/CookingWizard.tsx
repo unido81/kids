@@ -48,7 +48,7 @@ export default function CookingWizard({
         }
     };
 
-    const showTimer = currentStep.timerSeconds && !isTimerDone;
+    const showTimer = !!currentStep.timerSeconds && !isTimerDone;
 
     return (
         <div className="w-full max-w-md mx-auto flex flex-col h-full">
